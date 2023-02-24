@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="device-width=11, initial-scale=1.0">
+    <title>Queu project</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+    <div class ="wrapper">
+        <header class="head"> Queuing theory application </header>
+        <form action="project.php" method="post">
+            <div class="dbl-field">
+                <div class="field">
+                    <input  name="h" placeholder="Enter interarrival rate" required>
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class ="field">
+                    <input  name ="u" placeholder="Enter servise rate" required>
+                    <i class="fas fa-envelope"></i>
+                    </div>
+                    </div>
+                    <div class="dbl-field">
+                        <div class="field">
+                            <input type="number" name ="t" placeholder="enter t" >
+                            <i class="fas fa-t-alt"></i>
+                            </div>
+                            <div  class="field">
+                                <input type="number" name="n" placeholder="enter   n ">
+                                <i class ="fas fa-glope"></i>
+            </div>
+            <div  class="field">
+                <input type="number" name="m" placeholder="enter initial number of customers ">
+                <i class ="fas fa-glope"></i>
+</div>
+<div  class="field">
+    <input type="number"  name="k"  placeholder="enter   K ">
+    <i class ="fas fa-glope"></i>
+</div>
+    </div>
+    <div>
+        <select name="queutype" class="selectionbox">
+            <option value="determestic_case1">Determenistic case1 (h>u) </option>
+            <option value="determestic_case2">Determenistic case2 (u>h)</option>
+            </select>
+    </div>
+    <!-- <dive class="massage">
+        <textarea placeholder="???" name ="massage"></textarea>
+        <i class="material-icons">massage</i>
+        </div> -->
+        <div class="button-area">
+            <button type="submit">send values</button>
+            <span></span>
+            </div>
+        </form>
+    </div>
+    <!-- <script src="script.js"></script>       -->
+</body>
+
+</html>
